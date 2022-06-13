@@ -5,6 +5,7 @@ import TopButtons from './components/TopButtons';
 import Inputs from './components/Inputs';
 import TimeAndLocation from './components/TimeAndLocation';
 import TemperatureAndDetails from './components/TemperatureAndDetails';
+import Forcast from './components/Forcast';
 
 
 
@@ -16,8 +17,12 @@ export default function App() {
     shadow-gray-400">
       <TopButtons/>
       <Inputs/>
+
       <TimeAndLocation/>
       <TemperatureAndDetails/>
+
+      <Forcast title="hourly forcast"/>
+      <Forcast title="daily forcast"/>
     </div>
   )
 }
