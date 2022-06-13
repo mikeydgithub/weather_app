@@ -26,9 +26,16 @@ function TopButtons() {
         }
     ]
 
+    // map over city data
+    // include a key for the city id due to mapping
+
     return (
-        <div>
-        Top Buttons
+
+        <div className="flex items-start justify-around my-6">
+            {cities.map((city) => (
+                <button key={city.id} className="text-white text-lg font-medium">
+                {city.title}</button>
+            ))}
         </div>
     )
 }
