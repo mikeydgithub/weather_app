@@ -33,7 +33,7 @@ function TopButtons() {
 
         <div className="flex items-start justify-around my-6">
             {cities.map((city) => (
-                <button key={city.id} className="text-white text-lg font-medium">
+                <button key={city.id} className="text-white text-lg font-medium cursor-pointer transition ease-out hover:scale-125">
                 {city.title}</button>
             ))}
         </div>

@@ -3,6 +3,7 @@ import './App.css';
 import React from 'react';
 import TopButtons from './components/TopButtons';
 import Inputs from './components/Inputs';
+import TimeAndLocation from './components/TimeAndLocation';
 
 
 
@@ -14,6 +15,7 @@ export default function App() {
     shadow-gray-400">
       <TopButtons/>
       <Inputs/>
+      <TimeAndLocation/>
     </div>
   )
 }
