@@ -4,6 +4,7 @@ import React from 'react';
 import TopButtons from './components/TopButtons';
 import Inputs from './components/Inputs';
 import TimeAndLocation from './components/TimeAndLocation';
+import TemperatureAndDetails from './components/TemperatureAndDetails';
 
 
 
@@ -16,6 +17,7 @@ export default function App() {
       <TopButtons/>
       <Inputs/>
       <TimeAndLocation/>
+      <TemperatureAndDetails/>
     </div>
   )
 }
