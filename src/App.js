@@ -2,6 +2,8 @@
 import './App.css';
 import React from 'react';
 import TopButtons from './components/TopButtons';
+import Inputs from './components/Inputs';
+
 
 
 
@@ -11,6 +13,7 @@ export default function App() {
     from bg-cyan-700 to-blue-700 h-fit shadow-xl 
     shadow-gray-400">
       <TopButtons/>
+      <Inputs/>
     </div>
   )
 }
