@@ -8,6 +8,12 @@ function TimeAndLocation() {
             Tuesday, 31 May 2022 | Local Time 12:46 PM
             </p>
         </div>
+        <div className="flex items-center justify-center my-3">
+            <p className="text-white text-3xl font-medium">
+                Berlin, DE
+            </p>
+
+        </div>
     </div>
 
   )
