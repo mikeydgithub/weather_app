@@ -1,6 +1,6 @@
 
 import './App.css';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import TopButtons from './components/TopButtons';
 import Inputs from './components/Inputs';
 import TimeAndLocation from './components/TimeAndLocation';
@@ -12,6 +12,11 @@ import getFormattedWeatherData from './services/weatherService';
 
 
 export default function App() {
+
+  const [query, setQuery] = useState({q: 'berlin'})
+  const [units, setUnits] = useState('metric')
+  const [weather, setWeather] = useState(null)
+
 
   const fetchWeather = async () => {
     const data = await getFormattedWeatherData({ q: 'london'});
