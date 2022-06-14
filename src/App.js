@@ -43,8 +43,8 @@ export default function App() {
         <TimeAndLocation weather={weather}/>
         <TemperatureAndDetails weather={weather}/>
   
-        <Forcast title="hourly forcast"/>
-        <Forcast title="daily forcast"/>
+        <Forcast title="hourly forcast" items={weather.hourly}/>
+        <Forcast title="daily forcast" items={weather.daily}/>
         </div>
 
       )}
