@@ -13,17 +13,23 @@ import getFormattedWeatherData from './services/weatherService';
 
 export default function App() {
 
-  const [query, setQuery] = useState({q: 'berlin'})
+  const [query, setQuery] = useState({ q: 'berlin'})
   const [units, setUnits] = useState('metric')
   const [weather, setWeather] = useState(null)
 
 
+  
+  useEffect(() => {
   const fetchWeather = async () => {
-    const data = await getFormattedWeatherData({ q: 'london'});
-    console.log(data)
+    await getFormattedWeatherData({...query, units}).then(
+      (data) => {
+        setWeather(data);
+      });
   };
 
+  // fetch new data
   fetchWeather();
+  }, [query, units])
 
   return (
     <div className="mx-auto max-w-screen-md mt-4 py-5 px-32 bg-gradient-to-br 
@@ -32,11 +38,18 @@ export default function App() {
       <TopButtons/>
       <Inputs/>
 
-      <TimeAndLocation/>
-      <TemperatureAndDetails/>
+      {weather && (
+        <div>
+        <TimeAndLocation weather={weather}/>
+        <TemperatureAndDetails weather={weather}/>
+  
+        <Forcast title="hourly forcast"/>
+        <Forcast title="daily forcast"/>
+        </div>
 
-      <Forcast title="hourly forcast"/>
-      <Forcast title="daily forcast"/>
+      )}
+
+    
     </div>
   )
 }
