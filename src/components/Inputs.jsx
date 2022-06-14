@@ -1,13 +1,22 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { UilSearch, UilLocationPoint  } from '@iconscout/react-unicons'
 
-function Inputs() {
+function Inputs({setQuery, units, setUnits}) {
+    const [city, setCity] = useState('');
+
+
+    const handleSearchClick = () => {
+        if (city !== '') setQuery({q: city})
+    }
+
   return (
     
 
     <div className="flex flex-row justify-center my-6">
         <div className="flex flex-row w-3/4 items-center justify-center space-x-4"> 
-            <input 
+            <input
+                value={city}
+                onChange={(e) => setCity(e.currentTarget.value)}
                 type="text" 
                 placeholder="Search..."
                 className="text-xl 
@@ -17,7 +26,9 @@ function Inputs() {
                 capitalize
                 " 
             />
-            <UilSearch size={25} className="text-white cursor-pointer transition ease-out hover:scale-125"/>
+            <UilSearch size={25} className="text-white cursor-pointer transition ease-out hover:scale-125"
+            onClick={handleSearchClick}
+            />
             <UilLocationPoint size={25} className="text-white cursor-pointer transition ease-out hover:scale-125"/>
         </div>
         <div className="flex flex-row w-1/4 items-center justify-center">
