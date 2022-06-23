@@ -7,7 +7,7 @@
   1. [Title](#Title)
   2. [Usage](#Usage)
   3. [Installation](#Installtion)
-  4. [User Story](#Story)
+  4. [Story](#Story)
   5. [Description](#Description)
 
 
@@ -23,7 +23,7 @@
   * Luxon
   * React Toastify
   
-  ## User Story
+  ## Story
 
   As a weather enthusiast
   
