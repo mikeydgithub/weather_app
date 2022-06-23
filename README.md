@@ -6,7 +6,7 @@
   ## Table of Contents
   1. [Title](#Title)
   2. [Usage](#Usage)
-  3. [Installtion](#Installtion)
+  3. [Made Using](#Made Using)
   4. [User Story](#Story)
   5. [Description](#Description)
 
@@ -15,12 +15,13 @@
 
   * Using Open Weather API get weather information based on location.
 
-  ## Installation
+  ## Made Using
   
   * Node.JS
   * React 
   * Tailwind CSS
-  * 
+  * Luxon
+  * React Toastify
   
   ## User Story
 
