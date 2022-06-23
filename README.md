@@ -17,7 +17,10 @@
 
   ## Installation
   
-  * Requires Node.js to and the libraries in the app to be installed.
+  * Node.JS
+  * React 
+  * Tailwind CSS
+  * 
   
   ## User Story
 
