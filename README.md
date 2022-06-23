@@ -6,7 +6,7 @@
   ## Table of Contents
   1. [Title](#Title)
   2. [Usage](#Usage)
-  3. [Made Using](#Made Using)
+  3. [Made Using](#MadeUsing)
   4. [User Story](#Story)
   5. [Description](#Description)
 
