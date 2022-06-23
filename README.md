@@ -6,7 +6,7 @@
   ## Table of Contents
   1. [Title](#Title)
   2. [Usage](#Usage)
-  3. [Made Using](#MadeUsing)
+  3. [Installation](#Installtion)
   4. [User Story](#Story)
   5. [Description](#Description)
 
@@ -15,7 +15,7 @@
 
   * Using Open Weather API get weather information based on location.
 
-  ## Made Using
+  ## Installtion
   
   * Node.JS
   * React 
